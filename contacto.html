@@ -9,85 +9,23 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Poppins',sans-serif;background:#f4f8fb;color:#1f2937;}
 
-body{
-font-family:'Poppins',sans-serif;
-background:#f4f8fb;
-color:#1f2937;
-}
+header{background:linear-gradient(135deg,#8ecae6,#bde0fe);color:white;padding:60px 20px;text-align:center;}
 
-/* HEADER */
-header{
-background:linear-gradient(135deg,#8ecae6,#bde0fe);
-color:white;
-padding:60px 20px;
-text-align:center;
-}
+.logo{width:70px;margin:0 auto 15px;animation:float 3s ease-in-out infinite;}
+@keyframes float{0%,100%{transform:translateY(0);}50%{transform:translateY(-6px);}}
 
-/* LOGO */
-.logo{
-width:70px;
-margin:0 auto 15px;
-animation:float 3s ease-in-out infinite;
-}
+nav{margin-top:35px;}
+nav a{color:white;text-decoration:none;margin:0 15px;font-weight:500;position:relative;}
+nav a::after{content:'';display:block;height:2px;width:0%;background:white;transition:0.3s;margin:auto;}
+nav a:hover::after{width:100%;}
 
-@keyframes float{
-0%,100%{transform:translateY(0);}
-50%{transform:translateY(-6px);}
-}
+section{max-width:700px;margin:80px auto;padding:0 20px;}
+.card{background:white;padding:40px;border-radius:20px;box-shadow:0 15px 35px rgba(0,0,0,0.08);}
+h2{margin-bottom:20px;color:#3a86c4;}
 
-/* MENÚ */
-nav{
-margin-top:35px;
-}
-
-nav a{
-color:white;
-text-decoration:none;
-margin:0 15px;
-font-weight:500;
-position:relative;
-}
-
-nav a::after{
-content:'';
-display:block;
-height:2px;
-width:0%;
-background:white;
-transition:0.3s;
-margin:auto;
-}
-
-nav a:hover::after{
-width:100%;
-}
-
-/* CONTENT */
-section{
-max-width:700px;
-margin:80px auto;
-padding:0 20px;
-}
-
-.card{
-background:white;
-padding:40px;
-border-radius:20px;
-box-shadow:0 15px 35px rgba(0,0,0,0.08);
-}
-
-h2{
-margin-bottom:20px;
-color:#3a86c4;
-}
-
-/* FORM */
 input, textarea{
 width:100%;
 padding:15px;
@@ -130,16 +68,8 @@ border-radius:10px;
 text-align:center;
 }
 
-/* SOCIAL */
-.social{
-margin-top:40px;
-text-align:center;
-}
-
-.social h3{
-margin-bottom:20px;
-color:#3a86c4;
-}
+.social{margin-top:40px;text-align:center;}
+.social h3{margin-bottom:20px;color:#3a86c4;}
 
 .social a{
 display:inline-flex;
@@ -158,9 +88,7 @@ transition:0.3s ease;
 
 .telegram{ background:#0088cc; }
 .tiktok{ background:#000000; }
-.instagram{
-background:linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);
-}
+.instagram{background:linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);}
 .facebook{ background:#1877f2; }
 
 .social a:hover{
@@ -168,7 +96,6 @@ transform:translateY(-4px) scale(1.05);
 opacity:0.9;
 }
 
-/* FOOTER */
 footer{
 background:#0f172a;
 color:#cbd5e1;
@@ -177,12 +104,8 @@ padding:25px;
 margin-top:80px;
 }
 
-/* RESPONSIVE */
 @media(max-width:768px){
-nav a{
-display:block;
-margin:10px 0;
-}
+nav a{display:block;margin:10px 0;}
 }
 </style>
 </head>
@@ -199,9 +122,9 @@ margin:10px 0;
 
 <nav>
 <a href="index.html">Comunidad</a>
-<a href="poveste.html">Sobre nosotros</a>
-<a href="marturii.html">Testimonios</a>
-<a href="contact.html">Contacto</a>
+<a href="sobre-nosotros.html">Sobre nosotros</a>
+<a href="testimonios.html">Testimonios</a>
+<a href="contacto.html">Contacto</a>
 </nav>
 
 </header>
@@ -273,3 +196,4 @@ document.getElementById("contact-form").reset();
 
 </body>
 </html>
+
