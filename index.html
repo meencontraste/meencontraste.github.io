@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Me Encontraste y Me Sanaste | Comunidad</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+background:#f4f8fb;
+color:#1f2937;
+}
+
+/* HEADER */
+header{
+background:linear-gradient(135deg,#8ecae6,#bde0fe);
+color:white;
+padding:70px 20px;
+text-align:center;
+}
+
+.logo{
+width:75px;
+margin:0 auto 15px;
+animation:float 3s ease-in-out infinite;
+}
+
+@keyframes float{
+0%,100%{transform:translateY(0);}
+50%{transform:translateY(-6px);}
+}
+
+header h1{
+font-weight:500;
+letter-spacing:1px;
+}
+
+/* MENÚ */
+nav{
+margin-top:35px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin:0 15px;
+font-weight:500;
+position:relative;
+}
+
+nav a::after{
+content:'';
+display:block;
+height:2px;
+width:0%;
+background:white;
+transition:0.3s;
+margin:auto;
+}
+
+nav a:hover::after{
+width:100%;
+}
+
+/* CONTENT */
+section{
+max-width:900px;
+margin:80px auto;
+padding:0 20px;
+}
+
+.card{
+background:white;
+padding:55px;
+border-radius:25px;
+box-shadow:0 20px 50px rgba(0,0,0,0.08);
+}
+
+h2{
+color:#5fa8d3;
+margin-bottom:20px;
+}
+
+p{
+line-height:1.8;
+margin-bottom:15px;
+}
+
+/* MISIÓN */
+.mission{
+margin-top:50px;
+padding:40px;
+background:#eaf6fb;
+border-radius:20px;
+border-left:6px solid #8ecae6;
+}
+
+.mission ul{
+margin:20px 0;
+padding-left:20px;
+line-height:1.9;
+}
+
+/* IMPORTANTE */
+.important{
+margin-top:50px;
+padding:40px;
+background:#dff1fb;
+border-radius:20px;
+border-left:6px solid #8ecae6;
+box-shadow:0 10px 30px rgba(0,0,0,0.04);
+}
+
+.important h3{
+color:#3a86c4;
+margin-bottom:15px;
+font-size:20px;
+}
+
+/* VERSÍCULO */
+.verse{
+margin-top:40px;
+padding:30px;
+background:#ffffff;
+border-radius:20px;
+text-align:center;
+font-size:15px;
+color:#3a86c4;
+box-shadow:0 10px 30px rgba(0,0,0,0.05);
+min-height:110px;
+display:flex;
+flex-direction:column;
+justify-content:center;
+transition:opacity 1.2s ease, filter 1.2s ease;
+}
+
+.verse.fade-out{
+opacity:0;
+filter:blur(4px);
+}
+
+.verse.fade-in{
+opacity:1;
+filter:blur(0);
+}
+
+#verse-text{
+font-style:italic;
+margin-bottom:10px;
+}
+
+#verse-ref{
+font-size:13px;
+font-weight:500;
+opacity:0.8;
+}
+
+/* ALERTA */
+.alert{
+margin-top:40px;
+padding:30px;
+background:#cfe9f7;
+border-radius:18px;
+color:#1d3557;
+font-size:15px;
+line-height:1.9;
+border-left:6px solid #8ecae6;
+}
+
+.alert strong{
+color:#1d3557;
+}
+
+/* FOOTER */
+footer{
+background:#0f172a;
+color:#cbd5e1;
+text-align:center;
+padding:30px;
+margin-top:80px;
+font-size:14px;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+.card{
+padding:30px;
+}
+nav a{
+display:block;
+margin:10px 0;
+}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+
+<svg class="logo" viewBox="0 0 100 100" fill="white">
+<path d="M50 90s-35-20-35-45a20 20 0 0 1 35-10 20 20 0 0 1 35 10c0 25-35 45-35 45z"/>
+</svg>
+
+<h1>Me Encontraste y Me Sanaste</h1>
+
+<nav>
+<a href="index.html">Comunidad</a>
+<a href="poveste.html">Sobre nosotros</a>
+<a href="marturii.html">Testimonios</a>
+<a href="contact.html">Contacto</a>
+</nav>
+
+</header>
+
+<section>
+
+<div class="card">
+
+<h2>Quiénes somos como comunidad</h2>
+
+<p>
+Me Encontraste y Me Sanaste es una comunidad construida sobre la escucha, la empatía y la fe.
+Es un espacio seguro para quienes atraviesan dolor emocional, trauma o soledad.
+</p>
+
+<div class="mission">
+
+<h2>Nuestra misión</h2>
+
+<p>
+Deseamos construir una asociación de consejería bíblica dedicada a personas que han pasado por traumas profundos y heridas del alma.
+</p>
+
+<ul>
+<li>• Pérdida de una persona por suicidio</li>
+<li>• Violencia familiar</li>
+<li>• Bullying y humillación</li>
+<li>• Rechazo o abandono</li>
+<li>• Momentos en los que la fuerza para seguir adelante se debilita</li>
+</ul>
+
+<p>
+Creemos que cada vida tiene valor.
+No juzgamos. No condenamos. Estamos aquí para escuchar.
+</p>
+
+<div class="verse" id="verse-box">
+<div id="verse-text"></div>
+<div id="verse-ref"></div>
+</div>
+
+</div>
+
+<div class="important">
+<h3>Importante:</h3>
+<p>
+Si sientes la necesidad de hablar con alguien, de ser escuchado sin ser juzgado y ser comprendido, puedes contactarnos a través de la página de Contacto. Estamos aquí para ti para hablar contigo cuando más lo necesites 🤍
+</p>
+</div>
+
+<div class="alert">
+<strong>Si estás en una situación de emergencia o sientes que estás en peligro inmediato,</strong>
+por favor llama al <strong>112</strong> o contacta una línea de ayuda especializada.
+<br><br>
+Si necesitas hablar con alguien, ser escuchado sin juicio y con comprensión,
+puedes contactarnos a través de la página de Contacto. Estamos aquí para ti 🤍
+</div>
+
+</div>
+
+</section>
+
+<footer>
+© 2026 Me Encontraste y Me Sanaste | Comunidad de apoyo y consejería
+</footer>
+
+<script>
+const verses = [
+{ text:"El Señor está cerca de los quebrantados de corazón.", ref:"Salmo 34:18"},
+{ text:"Vengan a mí todos los que están cansados y cargados, y yo les daré descanso.", ref:"Mateo 11:28"},
+{ text:"Él sana a los quebrantados de corazón y venda sus heridas.", ref:"Salmo 147:3"},
+{ text:"No temas, porque yo estoy contigo.", ref:"Isaías 41:10"},
+{ text:"Encomienda al Señor tu carga, y él te sostendrá.", ref:"Salmo 55:22"},
+{ text:"El Señor es mi fuerza y mi escudo.", ref:"Salmo 28:7"},
+{ text:"Porque yo sé los planes que tengo para ustedes… planes de paz.", ref:"Jeremías 29:11"},
+{ text:"La luz brilla en las tinieblas.", ref:"Juan 1:5"},
+{ text:"Mi gracia es suficiente para ti.", ref:"2 Corintios 12:9"},
+{ text:"El llanto puede durar una noche, pero la alegría llega por la mañana.", ref:"Salmo 30:5"}
+];
+
+let current = 0;
+const verseBox = document.getElementById("verse-box");
+const verseText = document.getElementById("verse-text");
+const verseRef = document.getElementById("verse-ref");
+
+function changeVerse(){
+verseBox.classList.add("fade-out");
+
+setTimeout(() => {
+verseText.textContent = "“" + verses[current].text + "”";
+verseRef.textContent = verses[current].ref;
+verseBox.classList.remove("fade-out");
+verseBox.classList.add("fade-in");
+current = (current + 1) % verses.length;
+}, 1000);
+}
+
+changeVerse();
+setInterval(changeVerse, 9000);
+</script>
+
+</body>
+</html>
