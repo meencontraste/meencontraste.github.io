@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Me Encontraste y Me Sanaste | Contacto</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+background:#f4f8fb;
+color:#1f2937;
+}
+
+/* HEADER */
+header{
+background:linear-gradient(135deg,#8ecae6,#bde0fe);
+color:white;
+padding:60px 20px;
+text-align:center;
+}
+
+/* LOGO */
+.logo{
+width:70px;
+margin:0 auto 15px;
+animation:float 3s ease-in-out infinite;
+}
+
+@keyframes float{
+0%,100%{transform:translateY(0);}
+50%{transform:translateY(-6px);}
+}
+
+/* MENÚ */
+nav{
+margin-top:35px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin:0 15px;
+font-weight:500;
+position:relative;
+}
+
+nav a::after{
+content:'';
+display:block;
+height:2px;
+width:0%;
+background:white;
+transition:0.3s;
+margin:auto;
+}
+
+nav a:hover::after{
+width:100%;
+}
+
+/* CONTENT */
+section{
+max-width:700px;
+margin:80px auto;
+padding:0 20px;
+}
+
+.card{
+background:white;
+padding:40px;
+border-radius:20px;
+box-shadow:0 15px 35px rgba(0,0,0,0.08);
+}
+
+h2{
+margin-bottom:20px;
+color:#3a86c4;
+}
+
+/* FORM */
+input, textarea{
+width:100%;
+padding:15px;
+margin-bottom:15px;
+border-radius:10px;
+border:1px solid #ccc;
+font-family:'Poppins',sans-serif;
+transition:0.3s;
+}
+
+input:focus, textarea:focus{
+border-color:#8ecae6;
+outline:none;
+}
+
+button{
+width:100%;
+padding:15px;
+border:none;
+border-radius:30px;
+background:#8ecae6;
+color:white;
+font-weight:600;
+cursor:pointer;
+transition:0.3s;
+}
+
+button:hover{
+background:#5fa8d3;
+transform:scale(1.03);
+}
+
+.success-message{
+display:none;
+margin-top:20px;
+padding:15px;
+background:#dff1fb;
+color:#1d3557;
+border-radius:10px;
+text-align:center;
+}
+
+/* SOCIAL */
+.social{
+margin-top:40px;
+text-align:center;
+}
+
+.social h3{
+margin-bottom:20px;
+color:#3a86c4;
+}
+
+.social a{
+display:inline-flex;
+align-items:center;
+justify-content:center;
+gap:10px;
+margin:10px;
+padding:12px 22px;
+border-radius:30px;
+color:white;
+text-decoration:none;
+font-size:14px;
+font-weight:500;
+transition:0.3s ease;
+}
+
+.telegram{ background:#0088cc; }
+.tiktok{ background:#000000; }
+.instagram{
+background:linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);
+}
+.facebook{ background:#1877f2; }
+
+.social a:hover{
+transform:translateY(-4px) scale(1.05);
+opacity:0.9;
+}
+
+/* FOOTER */
+footer{
+background:#0f172a;
+color:#cbd5e1;
+text-align:center;
+padding:25px;
+margin-top:80px;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+nav a{
+display:block;
+margin:10px 0;
+}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+
+<svg class="logo" viewBox="0 0 100 100" fill="white">
+<path d="M50 90s-35-20-35-45a20 20 0 0 1 35-10 20 20 0 0 1 35 10c0 25-35 45-35 45z"/>
+</svg>
+
+<h1>Me Encontraste y Me Sanaste</h1>
+
+<nav>
+<a href="index.html">Comunidad</a>
+<a href="poveste.html">Sobre nosotros</a>
+<a href="marturii.html">Testimonios</a>
+<a href="contact.html">Contacto</a>
+</nav>
+
+</header>
+
+<section>
+<div class="card">
+
+<h2>Envíanos un mensaje</h2>
+
+<form id="contact-form">
+<input type="text" name="name" placeholder="Tu nombre" required>
+<input type="email" name="email" placeholder="Tu correo electrónico" required>
+<textarea name="message" rows="5" placeholder="Escribe tu mensaje..." required></textarea>
+<button type="submit">Enviar mensaje</button>
+</form>
+
+<div class="success-message" id="success-msg">
+El mensaje fue enviado con éxito 🤍
+</div>
+
+<div class="social">
+<h3>También puedes encontrarnos en:</h3>
+
+<a href="https://t.me/sufletmiccareteasculta" target="_blank" class="telegram">
+<i class="fab fa-telegram-plane"></i> Telegram
+</a>
+
+<a href="http://www.tiktok.com/@suflet.mic14" target="_blank" class="tiktok">
+<i class="fab fa-tiktok"></i> TikTok
+</a>
+
+<a href="https://www.instagram.com/un_suflet_mic_care_te_asculta/" target="_blank" class="instagram">
+<i class="fab fa-instagram"></i> Instagram
+</a>
+
+<a href="https://www.facebook.com/" target="_blank" class="facebook">
+<i class="fab fa-facebook-f"></i> Facebook
+</a>
+
+</div>
+
+</div>
+</section>
+
+<footer>
+© 2026 Me Encontraste y Me Sanaste
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+<script>
+(function(){
+emailjs.init("_IVe9Vmte22ka5wMm");
+})();
+
+document.getElementById("contact-form").addEventListener("submit", function(e) {
+e.preventDefault();
+
+emailjs.sendForm(
+"service_s6qhej9",
+"template_b9xtxlc",
+this
+).then(function() {
+document.getElementById("success-msg").style.display="block";
+document.getElementById("contact-form").reset();
+});
+});
+</script>
+
+</body>
+</html>
