@@ -8,7 +8,11 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 <style>
-*{margin:0;padding:0;box-sizing:border-box;}
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
 
 body{
 font-family:'Poppins',sans-serif;
@@ -24,14 +28,8 @@ text-align:center;
 }
 
 .logo{
-width:75px;
+width:70px;
 margin:0 auto 15px;
-animation:float 3s ease-in-out infinite;
-}
-
-@keyframes float{
-0%,100%{transform:translateY(0);}
-50%{transform:translateY(-6px);}
 }
 
 header h1{
@@ -40,7 +38,7 @@ letter-spacing:1px;
 }
 
 nav{
-margin-top:35px;
+margin-top:30px;
 }
 
 nav a{
@@ -48,21 +46,6 @@ color:white;
 text-decoration:none;
 margin:0 15px;
 font-weight:500;
-position:relative;
-}
-
-nav a::after{
-content:'';
-display:block;
-height:2px;
-width:0%;
-background:white;
-transition:0.3s;
-margin:auto;
-}
-
-nav a:hover::after{
-width:100%;
 }
 
 section{
@@ -73,27 +56,87 @@ padding:0 20px;
 
 .card{
 background:white;
-padding:55px;
-border-radius:25px;
-box-shadow:0 20px 50px rgba(0,0,0,0.08);
+padding:50px;
+border-radius:20px;
+box-shadow:0 15px 40px rgba(0,0,0,0.08);
 }
 
 h2{
 color:#c1121f;
 margin-bottom:25px;
-font-weight:600;
 }
 
 p{
-line-height:1.8;
 margin-bottom:15px;
+line-height:1.8;
 }
 
 iframe{
+width:100%;
+height:750px;
+border:none;
 margin-top:20px;
-border-radius:20px;
-box-shadow:0 15px 40px rgba(0,0,0,0.08);
+border-radius:15px;
 }
 
 footer{
-backgro
+background:#7f1d1d;
+color:#ffe5e5;
+text-align:center;
+padding:30px;
+margin-top:100px;
+font-size:14px;
+}
+
+@media(max-width:768px){
+.card{padding:30px;}
+nav a{display:block;margin:10px 0;}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+
+<svg class="logo" viewBox="0 0 100 100" fill="white">
+<path d="M50 90s-35-20-35-45a20 20 0 0 1 35-10 20 20 0 0 1 35 10c0 25-35 45-35 45z"/>
+</svg>
+
+<h1>Me Encontraste y Me Sanaste</h1>
+
+<nav>
+<a href="index.html">Comunidad</a>
+<a href="sobre-nosotros.html">Sobre nosotros</a>
+<a href="testimonios.html">Testimonios</a>
+<a href="contacto.html">Contacto</a>
+</nav>
+
+</header>
+
+<section>
+<div class="card">
+
+<h2>Testimonios</h2>
+
+<p><strong>Ana:</strong> “Por primera vez me sentí escuchada sin ser juzgada.”</p>
+<p><strong>Mihai:</strong> “Me dio esperanza en un momento crítico.”</p>
+<p><strong>María:</strong> “Un lugar seguro donde encontré paz.”</p>
+
+<br><br>
+
+<h2>Deja tu opinión ❤️</h2>
+
+<iframe 
+src="https://docs.google.com/forms/d/e/1FAIpQLSdr6teLkAkGGDTU1YUqTQtVppISpRx1_AM-O100a5nDokivgg/viewform?embedded=true">
+</iframe>
+
+</div>
+</section>
+
+<footer>
+© 2026 Me Encontraste y Me Sanaste | Comunidad de apoyo y consejería
+</footer>
+
+</body>
+</html>
