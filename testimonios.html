@@ -19,7 +19,7 @@ color:#1f2937;
 header{
 background:linear-gradient(135deg,#d62828,#f77f7f);
 color:white;
-padding:70px 20px;
+padding:70px 0;
 text-align:center;
 }
 
@@ -37,26 +37,28 @@ animation:float 3s ease-in-out infinite;
 header h1{
 font-weight:500;
 letter-spacing:1px;
+margin-bottom:20px;
 }
 
+/* NAV VERTICAL STRANS */
 nav{
-margin-top:35px;
 display:flex;
-flex-direction:column; /* UNA SUB ALTA */
+flex-direction:column;
 align-items:center;
-gap:18px;
+gap:10px; /* mai strans */
 }
 
+/* link ocupa toata latimea */
 nav a{
 color:white;
 text-decoration:none;
 font-weight:500;
 position:relative;
-display:inline-block;
-padding-bottom:4px;
+width:100%;
+padding:6px 0;
 }
 
-/* LINIA DIN MIJLOC SPRE STANGA + DREAPTA */
+/* LINIA PE TOATA PAGINA */
 nav a::after{
 content:'';
 position:absolute;
@@ -65,12 +67,15 @@ bottom:0;
 width:0;
 height:2px;
 background:white;
-transition:all 0.3s ease;
+transition:all 0.4s ease;
 transform:translateX(-50%);
 }
 
+/* la hover se intinde pe toata latimea */
 nav a:hover::after{
 width:100%;
+left:0;
+transform:none;
 }
 
 section{
@@ -165,3 +170,4 @@ src="https://docs.google.com/forms/d/e/1FAIpQLSdr6teLkAkGGDTU1YUqTQtVppISpRx1_AM
 
 </body>
 </html>
+
