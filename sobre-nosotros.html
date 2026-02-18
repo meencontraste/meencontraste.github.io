@@ -3,18 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Me Encontraste y Me Sanaste | Testimonios</title>
+<title>Me Encontraste y Me Sanaste | Sobre nosotros</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box;}
-
-body{
-font-family:'Poppins',sans-serif;
-background:#fff5f5;
-color:#1f2937;
-}
+body{font-family:'Poppins',sans-serif;background:#fff5f5;color:#1f2937;}
 
 header{
 background:linear-gradient(135deg,#d62828,#f77f7f);
@@ -39,39 +34,27 @@ font-weight:500;
 letter-spacing:1px;
 }
 
-nav{
-margin-top:35px;
-display:flex;
-flex-direction:column; /* UNA SUB ALTA */
-align-items:center;
-gap:18px;
-}
+nav{margin-top:35px;}
 
 nav a{
 color:white;
 text-decoration:none;
+margin:0 15px;
 font-weight:500;
 position:relative;
-display:inline-block;
-padding-bottom:4px;
 }
 
-/* LINIA DIN MIJLOC SPRE STANGA + DREAPTA */
 nav a::after{
 content:'';
-position:absolute;
-left:50%;
-bottom:0;
-width:0;
+display:block;
 height:2px;
+width:0%;
 background:white;
-transition:all 0.3s ease;
-transform:translateX(-50%);
+transition:0.3s;
+margin:auto;
 }
 
-nav a:hover::after{
-width:100%;
-}
+nav a:hover::after{width:100%;}
 
 section{
 max-width:900px;
@@ -88,21 +71,12 @@ box-shadow:0 20px 50px rgba(0,0,0,0.08);
 
 h2{
 color:#c1121f;
-margin-bottom:25px;
+margin-bottom:20px;
 }
 
 p{
 line-height:1.8;
 margin-bottom:15px;
-}
-
-iframe{
-width:100%;
-height:750px;
-border:none;
-margin-top:20px;
-border-radius:20px;
-box-shadow:0 15px 40px rgba(0,0,0,0.08);
 }
 
 footer{
@@ -116,6 +90,7 @@ font-size:14px;
 
 @media(max-width:768px){
 .card{padding:30px;}
+nav a{display:block;margin:10px 0;}
 }
 </style>
 </head>
@@ -142,19 +117,17 @@ font-size:14px;
 <section>
 <div class="card">
 
-<h2>Testimonios</h2>
+<h2>Sobre nosotros</h2>
 
-<p><strong>Ana:</strong> “Por primera vez me sentí escuchada sin ser juzgada.”</p>
-<p><strong>Mihai:</strong> “Me dio esperanza en un momento crítico.”</p>
-<p><strong>María:</strong> “Un lugar seguro donde encontré paz.”</p>
+<p>
+Hemos pasado por pérdida, rechazo y momentos de profunda oscuridad.
+Aprendimos que el apoyo sincero puede salvar vidas.
+</p>
 
-<br><br>
-
-<h2>Deja tu opinión ❤️</h2>
-
-<iframe 
-src="https://docs.google.com/forms/d/e/1FAIpQLSdr6teLkAkGGDTU1YUqTQtVppISpRx1_AM-O100a5nDokivgg/viewform?embedded=true">
-</iframe>
+<p>
+Esta comunidad nació del deseo de ofrecer a otros
+la paz y la comprensión que alguna vez nosotros buscamos.
+</p>
 
 </div>
 </section>
@@ -165,4 +138,5 @@ src="https://docs.google.com/forms/d/e/1FAIpQLSdr6teLkAkGGDTU1YUqTQtVppISpRx1_AM
 
 </body>
 </html>
+
 
